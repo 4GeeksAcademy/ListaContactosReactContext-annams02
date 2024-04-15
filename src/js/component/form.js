@@ -1,23 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const Formulario = () => {
 	return (
-                <form>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+        <form className="container">
+        <div className="form-group">
+            <label for="inputNombre" >Name</label>
+            <input type="text" className="form-control" id="inputNombre" placeholder="Nombre completo" />
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Email</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+        <div className="form-group">
+            <label for="inputEmail" >Email</label>
+            <input type="text" className="form-control" id="inputEmail" placeholder="Email" />
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div className="form-group">
+            <label for="inputPhone" >Telefono</label>
+            <input type="text" className="form-control" id="inputPhone" placeholder="Telefono" />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div className="form-group">
+            <label for="inputAdress" >Dirección</label>
+            <input type="text" className="form-control" id="inputAdress" placeholder="Dirección" />
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
         </form>
 		
 	);
 };
+
+export default Formulario;
